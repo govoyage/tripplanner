@@ -11,3 +11,6 @@ script:
   # the following command line builds the project, execute the SonarQube analysis
   - gradle sonarqube -Dsonar.host.url=https://sonarqube.com -Dsonar.login=$SONAR_TOKEN
 
+notifications:
+  email: false
+
