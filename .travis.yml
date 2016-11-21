@@ -6,8 +6,11 @@ addons:
   sonarqube: true
 env:
   global:
-    - SONAR_TOKEN=0daaddb9f315dd40a9511c416aba30aaea5601ee
+    - secure: "dME68fcjUL8Kv5ZfoPfIgPCrtwSJPV3fgJ6dm/7JGlGLwuim+dH7GwwGctdeeABE2fRlpz9o43To7Q9/Bmtwlt+w9HbSIHtMKjiFb4AxnF7VNyDmC/Zd8j8EGbyuaf6cuJGJNSDdxJJT6NEuKh4b8FAd8BxhMS0RH924WTt1oS2lhiXmx1FqV9UXxxSP+cOTIm6G8Z24zeVK1f2jAfc3+zPl+Pm2fVe4yGOZJIX9T3mY98qeZfRcWTiS6jspGfGOsJdlMjMwI39lzGpvUlziUUj2NSLBtPjpt34z2KgIiSwsxEjq9HnuUzgYiZExi+4frgRke/mCUp6bO8HddRy9BRCLzrmXdPKiNxex4loMqnF9MH1H4t4bZm/k95BmO2AhvafgPkEbdm1db2+0IZDa1a8vPDF7WLJyKldC+7D5+pVkn8UrFgYaRibMSrpd/N2kSrm2aXGGRYkIWkqwc3S0MUvxCbtLEhXVK/IBNkYbd9B0Z4ZaETUWIAlC4OmmSZsnL5a8uSAXuwjZsd6VWiQmcz/vyiUTjVdq6aOn0PX82JxDckbdDsexappkYziglmtkp4tMa7WZd+NUbslbL68pOHNj38++apztk2OH6ALz+k3pFe0kkaBxS3h5SONU8EfwKW+LHY/FFQaHejCRXH6xaMVKluGrzUpOYvJvDcLdAWg="
 script:
   # the following command line builds the project, execute the SonarQube analysis
   - gradle sonarqube -Dsonar.host.url=https://sonarqube.com -Dsonar.login=$SONAR_TOKEN
+
+notifications:
+  email: false
 

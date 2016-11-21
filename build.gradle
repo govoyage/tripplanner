@@ -7,10 +7,12 @@ buildscript {
     }
 }
 
-
+plugins {
+    id "org.sonarqube" version "2.2"
+}
 apply plugin: 'java'
 apply plugin: 'idea'
-apply plugin: 'spring-boot'
+apply plugin: 'org.springframework.boot'
 apply plugin: 'org.sonarqube'
 
 jar {
@@ -20,6 +22,9 @@ jar {
 
 repositories {
     mavenCentral()
+    maven {
+        url "https://repox.sonarsource.com/sonarsource"
+    }
 }
 
 sourceCompatibility = 1.8
