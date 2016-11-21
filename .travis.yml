@@ -1,3 +1,13 @@
 language: java
 jdk:
   - oraclejdk8
+  
+addons:
+  sonarqube: true
+env:
+  global:
+    - SONAR_TOKEN=0daaddb9f315dd40a9511c416aba30aaea5601ee
+script:
+  # the following command line builds the project, execute the SonarQube analysis
+  - gradle sonarqube
+
