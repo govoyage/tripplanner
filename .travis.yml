@@ -13,7 +13,7 @@ env:
     - SONAR_HOST_URL: https://sonarqube.com
 
 script:
-  - ./runSonarQubeAnalysis.sh
+  - gradle sonarqube -Dsonar.host.url=https://sonarqube.com -Dsonar.login=0daaddb9f315dd40a9511c416aba30aaea5601ee
 
 notifications:
   email: false
