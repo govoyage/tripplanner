@@ -7,7 +7,7 @@ set -e
 # - SONAR_TOKEN    => token of a user who has the "Execute Analysis" permission on the SQ server
 
 # And run the analysis
-# It assumes that the project uses Maven and has a POM at the root of the repo
+# It assumes that the project uses Maven and has a POM at the root of the repo 
 if [ "$TRAVIS_BRANCH" = "master" ] && [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
 	# => This will run a full analysis of the project and push results to the SonarQube server.
 	#
