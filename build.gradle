@@ -43,7 +43,3 @@ dependencies {
     testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile("org.seleniumhq.selenium:selenium-java:3.0.1")
 }
-
-task wrapper(type: Wrapper) {
-    gradleVersion = '2.9'
-}
