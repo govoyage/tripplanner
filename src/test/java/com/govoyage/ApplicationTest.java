@@ -18,7 +18,7 @@ import java.io.IOException;
 
 /**
  * Created by prasad on 2016/11/27.
- */
+ */ /*
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(TripPlanner.class)
 @WebIntegrationTest
