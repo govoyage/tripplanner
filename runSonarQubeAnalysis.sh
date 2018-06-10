@@ -6,6 +6,9 @@ set -e
 # - SONAR_HOST_URL => should point to the public URL of the SQ server (e.g. for Nemo: https://nemo.sonarqube.org)
 # - SONAR_TOKEN    => token of a user who has the "Execute Analysis" permission on the SQ server
 
+SONAR_HOST_URL=https://sonarcloud.io
+SONAR_TOKEN=09f5b97d807d1f61d58938a9ab2ce9f658a08870
+
 # And run the analysis
 # It assumes that the project uses Maven and has a POM at the root of the repo 
 if [ "$TRAVIS_BRANCH" = "master" ] && [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
