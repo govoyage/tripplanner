@@ -27,7 +27,7 @@ jar {
 
 repositories {
     mavenCentral()
-  //  maven { url "https://repox.sonarsource.com/sonarsource" }
+    maven { url "https://repox.sonarsource.com/sonarsource" }
     maven { url "https://repository.jboss.org/nexus/content/repositories/releases" }
 }
 
