@@ -1,7 +1,7 @@
 /*
-package com.govoyage;
+package com.lanka_guide;
 
-import com.govoyage.tripplanner.TripPlanner;
+import TripPlanner;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
