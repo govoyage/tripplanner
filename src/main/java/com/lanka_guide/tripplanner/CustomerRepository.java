@@ -1,4 +1,4 @@
-package com.govoyage.tripplanner;
+package com.lanka_guide.tripplanner;
 
 
 import org.springframework.data.repository.CrudRepository;

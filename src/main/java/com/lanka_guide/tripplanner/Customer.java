@@ -1,4 +1,4 @@
-package com.govoyage.tripplanner;
+package com.lanka_guide.tripplanner;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

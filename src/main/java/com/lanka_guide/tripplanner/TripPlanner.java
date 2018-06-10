@@ -1,4 +1,4 @@
-package com.govoyage.tripplanner;
+package com.lanka_guide.tripplanner;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
