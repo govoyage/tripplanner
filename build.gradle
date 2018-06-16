@@ -7,7 +7,6 @@ buildscript {
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.2.RELEASE")
-    //    classpath("org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.2.1")
     }
 }
 
@@ -41,7 +40,6 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-thymeleaf")
     compile("org.springframework.boot:spring-boot-devtools")
     compile("com.h2database:h2")
-   // testCompile("junit:junit")
-    // testCompile('org.springframework.boot:spring-boot-starter-test')
-    // testCompile("org.seleniumhq.selenium:selenium-java:3.0.1")
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+
 }
