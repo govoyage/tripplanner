@@ -1,4 +1,4 @@
-package com.lanka_guide.tripplanner
+package com.lankaguide.tripplanner
 
 import com.lankaguide.tripplanner.model.Itinerary
 import com.lankaguide.tripplanner.model.Location
@@ -13,18 +13,12 @@ import com.lankaguide.tripplanner.model.place.Place
 import com.lankaguide.tripplanner.model.place.accommodation.Home
 import com.lankaguide.tripplanner.model.place.accommodation.Hotel
 import com.lankaguide.tripplanner.model.place.transport.Airport
-import org.junit.Test
-import org.junit.runner.RunWith
-import org.springframework.boot.test.context.SpringBootTest
-import org.springframework.test.context.junit4.SpringRunner
-
+import org.junit.jupiter.api.Test
 import java.time.*
 
-//@RunWith(SpringRunner::class)
-//@SpringBootTest
 class TripApplicationTests {
 
-//    @Test
+    @Test
     fun testModel() {
         val itinerary = Itinerary()
 
