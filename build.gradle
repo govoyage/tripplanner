@@ -21,7 +21,7 @@ plugins {
 apply plugin: 'kotlin' // Required for Kotlin integration
 apply plugin: "kotlin-spring" // See https://kotlinlang.org/docs/reference/compiler-plugins.html#kotlin-spring-compiler-plugin
 apply plugin: 'org.springframework.boot'
-apply plugin: 'org.sonarqube'
+//apply plugin: 'org.sonarqube'
 
 jar {
     baseName = 'trip-planner'
