@@ -1,14 +1,21 @@
 package com.fandoco.tripplanner.model
 
+import com.fasterxml.jackson.annotation.JsonFormat
+import com.fasterxml.jackson.annotation.JsonIgnore
 import java.time.Duration
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 import java.util.*
 
-data class Activity(val type: String, val label: String, val startTime: ZonedDateTime
-                    , val endTime: ZonedDateTime, val startPlace: Place, val endPlace: Place) :
+data class Activity(val type: String, val label: String,
+                    val startTime: ZonedDateTime,
+                    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSZ") val endTime:
+                    ZonedDateTime,
+                    val startPlace: Place,
+                    val endPlace: Place) :
         Comparable<Activity> {
 
+    @JsonIgnore
     val dateFormatter = DateTimeFormatter.ofPattern("dd MMM yyyy HH:mm z", Locale.ENGLISH)
 
     override fun compareTo(other: Activity): Int {
