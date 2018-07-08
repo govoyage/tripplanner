@@ -1,4 +1,4 @@
-package com.lankaguide.tripplanner.model
+package com.fandoco.tripplanner.model
 
 class Location(internal var mapUrl: String) {
     companion object {

@@ -1,4 +1,4 @@
-package com.lankaguide.tripplanner
+package com.fandoco.tripplanner
 
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue
@@ -25,7 +25,7 @@ class Customer {
 
     override fun toString(): String {
         return "Customer{" +
-                "id=" + id +
+                "type=" + id +
                 ", firstName='" + firstName + '\''.toString() +
                 ", lastName='" + lastName + '\''.toString() +
                 '}'.toString()

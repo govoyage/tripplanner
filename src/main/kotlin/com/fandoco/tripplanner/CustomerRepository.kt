@@ -1,4 +1,4 @@
-package com.lankaguide.tripplanner
+package com.fandoco.tripplanner
 
 
 import org.springframework.data.repository.CrudRepository
