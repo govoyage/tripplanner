@@ -1,5 +1,9 @@
 package com.fandoco.tripplanner
 
+import com.fandoco.tripplanner.model.Activity
+import com.fandoco.tripplanner.model.Itinerary
+import com.fandoco.tripplanner.model.Location
+import com.fandoco.tripplanner.model.Place
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Controller
@@ -8,9 +12,11 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
+import java.time.*
+import java.util.*
 
 /**
- * Created by prasad on 2016/11/20.
+ *
  */
 @RestController
 class GreetingController {

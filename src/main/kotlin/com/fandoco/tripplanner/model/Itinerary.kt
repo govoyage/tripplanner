@@ -2,7 +2,7 @@ package com.fandoco.tripplanner.model
 
 import java.util.*
 
-class Itinerary(private val activities: TreeSet<Activity>) {
+class Itinerary(val id : String, val activities: TreeSet<Activity>) {
     override fun toString(): String {
         val sb = StringBuilder()
         for (activity in activities) {
