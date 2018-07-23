@@ -9,7 +9,7 @@ import java.util.*
 
 data class Activity(val type: String, val label: String,
                     val startTime: ZonedDateTime,
-                    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSZ") val endTime:
+                    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mmZ") val endTime:
                     ZonedDateTime,
                     val startPlace: Place,
                     val endPlace: Place) :
